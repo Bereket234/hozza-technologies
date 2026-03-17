@@ -37,7 +37,7 @@ export default function HeroSection() {
                 <div className="flex flex-col items-center lg:items-start gap-2">
                   <div className="flex gap-0.5 mb-1">
                     {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} className="w-2.5 h-2.5 fill-zinc-900 text-zinc-900" />
+                      <Star key={i} className="w-2.5 h-2.5 fill-[#14a800] text-[#14a800]" />
                     ))}
                   </div>
                   <div className="flex items-center gap-4 text-zinc-400 font-bold uppercase text-[10px] tracking-widest">
@@ -81,7 +81,7 @@ export default function HeroSection() {
             </p>
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((i) => (
-                <Star key={i} className="w-2 h-2 fill-zinc-900 text-zinc-900" />
+                <Star key={i} className="w-2 h-2 fill-[#14a800] text-[#14a800]" />
               ))}
             </div>
           </motion.div>

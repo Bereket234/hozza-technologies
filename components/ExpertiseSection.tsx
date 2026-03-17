@@ -63,15 +63,15 @@ export default function ExpertiseSection() {
               key={index}
               direction="up"
               delay={index * 0.1}
-              className="p-10 rounded-[2rem] border border-zinc-50 bg-white/50 hover:bg-white hover:border-zinc-100 hover:shadow-xl hover:shadow-zinc-100 transition-all duration-500 group flex flex-col items-center text-center"
+              className="p-10 rounded-[2rem] border border-zinc-50 bg-white/50 hover:bg-white hover:border-zinc-100 hover:shadow-xl hover:shadow-zinc-100 transition-all duration-500 group flex flex-col items-center justify-center text-center min-h-[380px]"
             >
-              <div className="w-12 h-12 rounded-full bg-zinc-50 flex items-center justify-center mb-8 text-zinc-900 border border-zinc-100 group-hover:scale-110 transition-transform duration-500">
+              <div className="w-12 h-12 rounded-full bg-zinc-50 flex items-center justify-center mb-6 mx-auto text-zinc-900 border border-zinc-100 group-hover:scale-110 transition-transform duration-500">
                 {spec.icon}
               </div>
-              <h3 className="font-bold text-lg mb-6 text-zinc-900 uppercase tracking-tight">
+              <h3 className="font-bold text-lg mb-4 text-zinc-900 uppercase tracking-tight">
                 {spec.title}
               </h3>
-              <div className="flex flex-wrap justify-center gap-2 pt-6 border-t border-zinc-50 w-full">
+              <div className="flex flex-wrap justify-center gap-2 pt-6 border-t border-zinc-50 w-full mt-auto">
                 {spec.skills.map((skill, sIndex) => (
                   <span
                     key={sIndex}

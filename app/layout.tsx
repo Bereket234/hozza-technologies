@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hozza Technologies | Product Engineering for Startups",
+  title: "Hozza Technologies | Software development company",
   description:
     "We build fast, scalable, and premium software products. Hozza Technologies bridges the gap between abstract ideas and robust technological implementations.",
   keywords: [
@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     "web development",
     "mobile development",
     "AI integration",
+    "AI automation",
+    "Analytics tools"
   ],
   authors: [{ name: "Hozza Technologies" }],
   creator: "Hozza Technologies",
@@ -35,12 +37,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Hozza Technologies",
-    description: "Build Fast. Scale Smart. Product Engineering for Startups.",
+    description: "Build Fast. Scale Smart. Software solutions.",
     url: "https://hozzatechnologies.com",
     siteName: "Hozza Technologies",
     images: [
       {
-        url: "https://hozzatechnologies.com/og-image.jpg", // Placeholder
+        url: "https://hozzatechnologies.com/og-image.jpg", 
         width: 1200,
         height: 630,
         alt: "Hozza Technologies - Software Agency",
