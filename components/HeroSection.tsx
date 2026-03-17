@@ -77,7 +77,7 @@ export default function HeroSection() {
               </div>
             </div>
             <p className="text-[11px] text-zinc-500 leading-relaxed italic mb-4">
-              "Hozza didn't just write code; they <span className="text-zinc-900 font-medium">built a product</span> that saved us months of rework."
+              "Bereket didn't just write code; they <span className="text-zinc-900 font-medium">built a product</span> that saved us months of rework."
             </p>
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((i) => (
