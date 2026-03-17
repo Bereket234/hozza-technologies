@@ -72,8 +72,8 @@ export default function HeroSection() {
                 <img src="/upwork-icon.png" alt="Client" className="w-full h-full object-cover" />
               </div>
               <div>
-                <p className="text-[10px] font-bold text-zinc-900 tracking-tight">Edgar Green</p>
-                <p className="text-[8px] text-zinc-400 font-bold uppercase tracking-wider">CEO and founder, TurnBnB LLC</p>
+                <p className="text-[10px] font-bold text-zinc-900 tracking-tight">Dylan Ramirez</p>
+                <p className="text-[8px] text-zinc-400 font-bold uppercase tracking-wider">CEO and founder, Withoutpost</p>
               </div>
             </div>
             <p className="text-[11px] text-zinc-500 leading-relaxed italic mb-4">
