@@ -26,7 +26,7 @@ const models = [
   }
 ];
 
-export default function EngagementModels() {
+export default function EngagementModels({ onContactClick }: { onContactClick: () => void }) {
   return (
     <section id="engagement" className="section-padding bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
@@ -68,7 +68,10 @@ export default function EngagementModels() {
                   ))}
                 </ul>
                 
-                <button className="w-full py-4 rounded-2xl bg-zinc-900 text-white font-bold text-sm tracking-wide uppercase hover:bg-zinc-800 transition-all flex items-center justify-center gap-2 shadow-lg shadow-zinc-200">
+                <button 
+                  onClick={onContactClick}
+                  className="w-full py-4 rounded-2xl bg-zinc-900 text-white font-bold text-sm tracking-wide uppercase hover:bg-zinc-800 transition-all flex items-center justify-center gap-2 shadow-lg shadow-zinc-200"
+                >
                   Get Started
                   <ArrowRight className="w-4 h-4" />
                 </button>

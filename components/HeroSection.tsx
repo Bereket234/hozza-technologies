@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Terminal, Cpu, MessageSquare, Smartphone, Star, Quote } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
-export default function HeroSection() {
+export default function HeroSection({ onContactClick }: { onContactClick: () => void }) {
   return (
     <section className="relative min-h-screen flex items-center pt-16 pb-16 overflow-hidden bg-white">
       {/* Background Decor */}
@@ -25,13 +25,16 @@ export default function HeroSection() {
                 We Deliver.
               </h1>
               <p className="text-base md:text-lg text-zinc-500 max-w-xl mb-12 leading-relaxed mx-auto lg:mx-0">
-                We are a high-performance product agency helping founders turn vision into <span className="text-zinc-900 font-medium">sophisticated software products</span> through integrated engineering excellence.
+                We are a high-performance software agency helping founders turn vision into <span className="text-zinc-900 font-medium">sophisticated software products</span> through integrated engineering excellence.
               </p>
             </ScrollReveal>
 
             <ScrollReveal direction="up" delay={0.2}>
               <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
-                <button className="px-12 py-5 rounded-full bg-zinc-900 text-white font-bold text-[12px] uppercase tracking-wide hover:bg-zinc-800 transition-all shadow-2xl shadow-zinc-200">
+                <button 
+                  onClick={onContactClick}
+                  className="px-12 py-5 rounded-full bg-zinc-900 text-white font-bold text-[12px] uppercase tracking-wide hover:bg-zinc-800 transition-all shadow-2xl shadow-zinc-200"
+                >
                   Start Your Project
                 </button>
                 <div className="flex flex-col items-center lg:items-start gap-2">

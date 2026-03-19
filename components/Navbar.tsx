@@ -19,7 +19,7 @@ const navLinks = [
   { name: "Testimonials", href: "#testimonials" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onContactClick }: { onContactClick: () => void }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -80,7 +80,10 @@ export default function Navbar() {
             ))}
           </div>
           <div className="ml-4">
-            <button className="px-6 py-2.5 rounded-full bg-zinc-900 text-white text-sm font-bold hover:bg-indigo-600 hover:scale-105 transition-all duration-500 flex items-center gap-2 group shadow-lg shadow-zinc-200">
+            <button 
+              onClick={onContactClick}
+              className="px-6 py-2.5 rounded-full bg-zinc-900 text-white text-sm font-bold hover:bg-indigo-600 hover:scale-105 transition-all duration-500 flex items-center gap-2 group shadow-lg shadow-zinc-200"
+            >
               Start Your Project
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -115,7 +118,10 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <button className="w-full mt-4 px-5 py-3 rounded-xl bg-zinc-900 text-white font-semibold flex items-center justify-center gap-2">
+            <button 
+              onClick={onContactClick}
+              className="w-full mt-4 px-5 py-3 rounded-xl bg-zinc-900 text-white font-semibold flex items-center justify-center gap-2"
+            >
               Start Your Project
               <ArrowRight className="w-4 h-4" />
             </button>
